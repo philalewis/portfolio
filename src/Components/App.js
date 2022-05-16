@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Styles/App.css'
-import ''
+import About from './About'
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
         <h1>Phil Lewis</h1>
         <p>Front End Software Engineer</p>
       </header>
-
+      <About exact path="/about"/>
     </main>
   )
 }
