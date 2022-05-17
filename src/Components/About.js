@@ -3,7 +3,6 @@ import '../Styles/About.css'
 import { aboutData } from '../data/about'
 
 const About = () => {
-
   const list = (cat) => {
     return aboutData[cat].map(thing => {
       return <li key={thing}>{thing}</li>
@@ -11,7 +10,10 @@ const About = () => {
   }
 
   const getEducated = () => {
-    return aboutData.education.map(degree => {
+    const orderedDegrees = aboutData.education.sort((a, b) => {
+      return b.year - a.year
+    })
+    return orderedDegrees.map(degree => {
       return (
         <article className="degree" key={degree.subject}>
           <h4 className="school-name">{degree.school}</h4>
