@@ -1,5 +1,5 @@
 export const aboutData = {
-  background: 'Welcome to my site! I am a front end software developer with a background in environmental sciences. I have made a career swtich and I am excited to bring my skills and experiences into the software industry.\n\n',
+  background: 'Welcome to my site! I am a front end software developer with a background in environmental sciences. I have made a career swtich and I am excited to bring my skills and experiences into the software industry.\n\nSome other text',
 
   skills: [
     'JavaScript',
@@ -26,13 +26,13 @@ export const aboutData = {
 
   education: [
     {
-      degree: 'B.A.',
+      degree: 'Bachelor of Arts',
       subject: 'Philosophy',
       school: 'University of Oklahoma',
       year: 2007
     },
     {
-      degree: 'B.S.',
+      degree: 'Bachelor of Science',
       subject: 'Environmental Science',
       school: 'University of Oklahoma',
       year: 2014

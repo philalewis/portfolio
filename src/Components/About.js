@@ -14,9 +14,10 @@ const About = () => {
     return aboutData.education.map(degree => {
       return (
         <article className="degree" key={degree.subject}>
-          <h4>{degree.school}</h4>
-          <p>{degree.subject}</p>
-          <h4>{degree.year}</h4>
+          <h4 className="school-name">{degree.school}</h4>
+          <p className="degree-type">{degree.degree}</p>
+          <p className="school-subject">{degree.subject}</p>
+          <h4 className="graduation-year">{degree.year}</h4>
         </article>
       )
     })
@@ -25,26 +26,27 @@ const About = () => {
   return (
     <section className="about-page">
       <section className='about-section'>
-        <h2>About</h2>
-        <section>
-          <h3>Background</h3>
+        <section className="about-subsection">
+          <h3 className="about-section-header">Background</h3>
           <p>{ aboutData.background }</p>
         </section>
-        <section>
-          <h3>Skills</h3>
-          <ul>
-            { list('skills') }
-          </ul>
-        </section>
-        <section>
-          <h3>Hobbies</h3>
-          <ul>
-            { list('hobbies') }
-          </ul>
-        </section>
-        <section className="education-section">
-          <h3>Education</h3>
-          { getEducated() }
+        <section className="about-details">
+          <section className="about-subsection about-details-section">
+            <h3 className="about-section-header">Skills</h3>
+            <ul>
+              { list('skills') }
+            </ul>
+          </section>
+          <section className="about-subsection about-details-section">
+            <h3 className="about-section-header">Education</h3>
+            { getEducated() }
+          </section>
+          <section className="about-subsection about-details-section">
+            <h3 className="about-section-header">Hobbies</h3>
+            <ul>
+              { list('hobbies') }
+            </ul>
+          </section>
         </section>
       </section>
     </section>
