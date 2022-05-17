@@ -22,10 +22,25 @@ export const aboutData = {
     'Camping'
   ],
   education: [
-    {
-      philosophy: {degree: 'B.A. Philosophy', school: 'University of Oklahoma', year: 2007},
-      envsci: {degree: 'B.S. Environmental Science', school: 'University of Oklahoma', year: 2014},
-      turing: {degree: 'Certificate of Completion in Front End Engineering', school: 'Turing School of Software & Design', year: 2022}
-    }
+    [
+      {
+        degree: 'B.A.',
+        subject: 'Philosophy',
+        school: 'University of Oklahoma',
+        year: 2007
+      },
+      {
+        degree: 'B.S.',
+        subject: 'Environmental Science',
+        school: 'University of Oklahoma',
+        year: 2014
+      },
+      {
+        degree: 'Certificate of Completion',
+        subject: 'Front End Engineering',
+        school: 'Turing School of Software & Design',
+        year: 2022
+      }
+    ]
   ]
 }
