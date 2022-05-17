@@ -1,4 +1,5 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 import '../Styles/App.css'
 import About from './About'
 
@@ -9,7 +10,9 @@ const App = () => {
         <h1>Phil Lewis</h1>
         <p>Front End Software Engineer</p>
       </header>
-      <About exact path="/about"/>
+      <Routes>
+        <Route exact path="/about" element={<About />} />
+      </Routes>
     </main>
   )
 }
