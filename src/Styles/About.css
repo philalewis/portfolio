@@ -1,0 +1,74 @@
+.about-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: pre-line;
+}
+
+.about-subsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about-details-section {
+  width: 30%;
+  border: 1px solid white;
+  /* background-color: #40798C; */
+  padding: 1rem 0;
+}
+
+ul {
+  list-style: none;
+  margin: .7rem 0;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  margin: .3rem;
+}
+
+.degree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.school-name {
+  margin: 1rem 0 0 0;
+  font-size: 1rem;
+}
+
+.school-subject {
+  margin: 0;
+}
+
+.graduation-year {
+  margin: 0;
+}
+
+.degree-type {
+  margin: 0;
+}
+
+.about-section-header {
+  margin: 0;
+  border-bottom: 1px solid white;
+  font-size: 1.5rem;
+}
