@@ -23,6 +23,16 @@ const Navbar = () => {
         className={checkIfActive('projects')}
         >Projects
       </button>
+      <button
+        onClick={() => navigate('resume')}
+        className={checkIfActive('resume')}
+        >Resume
+      </button>
+      <button
+        onClick={() => navigate('contact')}
+        className={checkIfActive('contact')}
+        >Contact
+      </button>
     </nav>
   )
 }
