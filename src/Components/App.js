@@ -4,6 +4,7 @@ import '../Styles/App.css'
 import About from './About'
 import Navbar from './Navbar'
 import Contact from './Contact'
+import Resume from './Resume'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Routes>
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/resume" element={<Resume />} />
       </Routes>
     </main>
   )
