@@ -1,0 +1,33 @@
+.contact-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.input-field {
+  margin: 1rem 0;
+  border: 1px solid white;
+  background-color: #1F363D;
+  color: white;
+}
+
+.send-email-button {
+  background-color: #40798C;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: .3rem;
+  width: 10rem;
+  
+}
+
+.send-email-button:hover {
+  background-color: #70A9A1;
+  cursor: pointer;
+}
