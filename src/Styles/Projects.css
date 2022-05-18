@@ -20,3 +20,21 @@
   background-color: #70A9A1;
   cursor: pointer;
 }
+
+.project-card {
+  width: 40rem;
+  border: 1px solid white;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  justify-items: center;
+}
+
+.project-name {
+  font-size: 1.7rem;
+  margin: 1rem;
+}
+

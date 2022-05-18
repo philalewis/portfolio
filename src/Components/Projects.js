@@ -21,7 +21,7 @@ const Projects = () => {
     return projects.map((project, i) => {
       return (
         <article key={i} className="project-card">
-          <h3>{project.name}</h3>
+          <h3 className="project-name">{project.name}</h3>
           <p>{project.description}</p>
           { insertImages(project.images) }
           <ul className="tech-list">Technologies Used:
@@ -52,7 +52,7 @@ const Projects = () => {
   }
 
   return (
-    <section>
+    <section className="projects-section">
       { buildProjects() }
     </section>
   )
