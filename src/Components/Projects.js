@@ -29,14 +29,22 @@ const Projects = () => {
           </ul>
           <section>
             <a href={project.deployed} >
-              <button className="project-link-button">Deployed Site</button>
+              <button className="project-link-button">
+                Deployed Site
+              </button>
             </a>
             <a href={project.repo} >
-              <button className="project-link-button">Github Repo</button>
+              <button className="project-link-button">
+                Github Repo
+              </button>
             </a>
-            { project.backend && <a href={project.backend} >
-              <button className="project-link-button">Backend</button>
-            </a> }
+            { project.backend &&
+              <a href={project.backend} >
+                <button className="project-link-button">
+                  Backend
+                </button>
+              </a>
+            }
           </section>
         </article>
       )
