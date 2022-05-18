@@ -13,7 +13,7 @@ const Resume = () => {
           href='PhilLewisResume.pdf'
           download
         >
-          <button>Download</button>
+          <button className="download-button">Download</button>
         </a>
     </section>
   )

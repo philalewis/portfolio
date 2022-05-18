@@ -5,7 +5,22 @@
 }
 
 .resume-image {
-  height: 70vh;
+  height: 60vh;
   overflow: auto;
 }
 
+.download-button {
+  background-color: #40798C;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem;
+  padding: .5rem;
+  width: 10rem;
+}
+
+.download-button:hover {
+  background-color: #70A9A1;
+}
