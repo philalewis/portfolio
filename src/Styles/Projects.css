@@ -24,6 +24,7 @@
 .project-card {
   width: 40rem;
   border: 1px solid white;
+  padding: 1rem;
 }
 
 .projects-section {
@@ -35,6 +36,6 @@
 
 .project-name {
   font-size: 1.7rem;
-  margin: 1rem;
+  margin:  0;
 }
 
