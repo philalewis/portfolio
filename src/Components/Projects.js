@@ -1,10 +1,10 @@
 import React from 'react'
 import '../Styles/Projects.css'
 import { projects } from '../data/projects'
-// import OneMinuteWriterImg from '../images/OneMinuteWriter.jpg'
-// import JazzCollaborationsImg from '../images/JazzCollaborations.jpg'
-// import DiscifyImg from '../images/Discify.jpg'
-// import RancidTomatillosImg from '../images/RancidTomatillos.jpg'
+import OneMinuteWriterImg from '../images/OneMinuteWriter.jpg'
+import JazzCollaborationsImg from '../images/JazzCollaborations.jpg'
+import DiscifyImg from '../images/Discify.jpg'
+import RancidTomatillosImg from '../images/RancidTomatillos.jpg'
 
 const Projects = () => {
   const listTechnologies = (technologies) =>  {
@@ -20,7 +20,7 @@ const Projects = () => {
           <h3 className="project-name">{project.name}</h3>
           <p>{project.description}</p>
           <img
-            src={require(project.image)}
+            src={project.image}
             alt="home page"
           />
           <ul className="tech-list">Technologies Used:

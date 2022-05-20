@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <section className="resume-page">
       <img
-        src={require('../PhilLewisResume.png')}
+        src={require('../images/PhilLewisResume.png')}
         alt="resume"
         className="resume-image"
       />
