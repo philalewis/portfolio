@@ -71,3 +71,14 @@ li {
   border-bottom: 1px solid white;
   font-size: 1.5rem;
 }
+
+.background-photo-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-pic {
+  margin: 0 2rem 2rem 0;
+  width: 12rem;
+  border-radius: 50%;
+}

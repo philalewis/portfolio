@@ -24,8 +24,8 @@ const Projects = () => {
     return projects.map((project, i) => {
       return (
         <article key={i} className="project-card">
-          <h3 className="project-name">{project.name}</h3>
-          <p>{project.description}</p>
+          <h3 className="project-name">{ project.name }</h3>
+          <p className="project-description">{ project.description }</p>
           <div className="tech-image-section">
             <ul className="tech-list">
               <p className="tech-used-title">Technologies Used:</p>
@@ -34,18 +34,18 @@ const Projects = () => {
             { listImages(project.images) }
           </div>
           <section>
-            <a href={project.deployed} >
+            <a href={ project.deployed } >
               <button className="project-link-button">
                 Deployed Site
               </button>
             </a>
-            <a href={project.repo} >
+            <a href={ project.repo } >
               <button className="project-link-button">
                 Github Repo
               </button>
             </a>
             { project.backend &&
-              <a href={project.backend} >
+              <a href={ project.backend } >
                 <button className="project-link-button">
                   Backend
                 </button>

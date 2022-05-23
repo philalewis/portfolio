@@ -30,7 +30,10 @@ const About = () => {
       <section className='about-section'>
         <section className="about-subsection">
           <h3 className="about-section-header">Background</h3>
-          <p>{ aboutData.background }</p>
+          <div className="background-photo-section">
+            <img className="profile-pic" src={ aboutData.photo } alt="profile picture"/>
+            <p>{ aboutData.background }</p>
+          </div>
         </section>
         <section className="about-details">
           <section className="about-subsection about-details-section">
