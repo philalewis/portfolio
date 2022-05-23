@@ -52,3 +52,7 @@
 .tech-used-title {
   margin: 0;
 }
+
+.project-description {
+  white-space: pre-line;
+}
