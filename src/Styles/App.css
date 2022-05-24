@@ -15,3 +15,21 @@ h1 {
   margin: 1rem 0;
   border-bottom: 1px solid white;
 }
+
+.contact-info-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-logo {
+  width: 4rem;
+
+}
+
+.contact-logo-button {
+  background-color: #1F363D;
+  width: 4rem;
+  margin: 0 2rem;
+  cursor: pointer;
+  border: none;
+}
