@@ -1,52 +1,44 @@
-import React, { useState } from 'react'
+import React from 'react'
+import emailLogo from '../images/email-logo.svg'
+import githubLogo from '../images/Github-logo.png'
+import linkedinLogo from '../images/linkedin-logo.svg'
 import '../Styles/Contact.css'
 
 const Contact = () => {
-  const [ name, setName ] = useState('')
-  const [ email, setEmail ] = useState('')
-  const [ message, setMessage ] = useState('')
-  const [ subject, setSubject ] = useState('')
-
-  const sendEmail = () => {
-    window.open(`mailto:phillewis1985@gmail.com?subject=${subject}&body=${message}`)
-  }
-
   return (
-    <section className="contact-page">
-      <form className="contact-form">
-        <input
-          type='text'
-          value={name}
-          className="input-field"
-          placeholder="name"
-          onChange={event => setName(event.target.value)}
+    <section className="contact-info-section">
+      <button
+        className="contact-logo-button"
+        onClick={() => {
+          window.open(`mailto:phillewis1985@gmail.com`)
+        }}
+      >
+        <img
+          className="contact-logo"
+          src={emailLogo}
+          alt="email logo"
         />
-        <input
-          type='email'
-          value={email}
-          className="input-field"
-          placeholder="email address"
-          onChange={event => setEmail(event.target.value)}
+      </button>
+      <a
+        href="https://github.com/philalewis"
+        className="contact-logo-button"
+      >
+        <img
+          className="contact-logo"
+          src={githubLogo}
+          alt="github logo"
         />
-        <input
-          type='text'
-          value={subject}
-          className="input-field"
-          placeholder="subject"
-          onChange={event => setSubject(event.target.value)}
+      </a>
+      <a
+      href="https://www.linkedin.com/in/philambroselewis/"
+        className="contact-logo-button"
+      >
+        <img
+          className="contact-logo"
+          src={linkedinLogo}
+          alt="linkedin logo"
         />
-        <input
-          type='text'
-          value={message}
-          className="input-field"
-          placeholder="message"
-          onChange={event => setMessage(event.target.value)}
-        />
-        <button
-          className="send-email-button"
-          onClick={event => sendEmail(event)}
-        >Send</button>
-      </form>
+      </a>
     </section>
   )
 }

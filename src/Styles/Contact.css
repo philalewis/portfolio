@@ -1,33 +1,16 @@
-.contact-page {
-  width: 100%;
+.contact-info-section {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
+.contact-logo {
+  width: 4rem;
 }
 
-.input-field {
-  margin: 1rem 0;
-  border: 1px solid white;
+.contact-logo-button {
   background-color: #1F363D;
-  color: white;
-}
-
-.send-email-button {
-  background-color: #40798C;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: .3rem;
-  width: 10rem;
-  
-}
-
-.send-email-button:hover {
-  background-color: #70A9A1;
+  width: 4rem;
+  margin: 0 2rem;
   cursor: pointer;
+  border: none;
 }
