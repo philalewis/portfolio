@@ -28,11 +28,6 @@ const Navbar = () => {
         className={checkIfActive('resume')}
         >Resume
       </button>
-      <button
-        onClick={() => navigate('contact')}
-        className={checkIfActive('contact')}
-        >Contact
-      </button>
     </nav>
   )
 }
